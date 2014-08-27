@@ -1,0 +1,17 @@
+# no need to store the logs or profiling
+logs/
+
+# also no need to add the docs (unless for releases)
+doc/
+
+# and no need to have the binary (unless for releases)
+bin/
+
+# Sometimes you might have these backup files
+*~
+
+# Or these vim files for backup and what not
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
