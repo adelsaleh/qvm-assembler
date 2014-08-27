@@ -34,6 +34,13 @@ make release
 This command will perform optimizations when compiling, suitable for release
 code. The resulting binary can be found in `bin/`.
 
+## Generating documentation
+```
+make gendoc
+```
+This command will generate documentation as well as building the project. The
+documentation files can be found in `doc/`.
+
 # How to run
 ```
 make run
