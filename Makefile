@@ -1,7 +1,7 @@
 CC=dmd # Compiler to use
 
 # The files to compile
-FILES=src/*.d
+FILES=source/*.d
 
 # The output folder and the output binary
 OUTPUT=bin/
