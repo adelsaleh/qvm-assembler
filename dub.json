@@ -4,5 +4,7 @@
 	"copyright": "Copyright © 2014, bayan",
 	"authors": ["bayan"],
 	"dependencies": {
-	}
+        "qlib": {"path": "../qlib"}
+	},
+    "versions": ["VibeCustomMain"]
 }

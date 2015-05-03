@@ -21,3 +21,4 @@ bin/
 [._]s[a-w][a-z]
 *.un~
 Session.vim
+qvm-assembler
