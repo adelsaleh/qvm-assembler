@@ -196,7 +196,6 @@ struct Line {
  * of the line if any.
  */
 Line lexLine(string s, int ln) {
-    writeln("\"", s, "\"");
     if(s.strip().length == 0) {
         return Line();
     }
@@ -301,6 +300,9 @@ unittest {
     f.writeln("    on y");
     f.writeln("    apply CNOT");
     f.writeln("endfn");
+    f.writeln("on x");
+    f.writeln("on y");
+    f.writeln("apply bellStates");
     f.writeln("measure x");
     f.writeln("measure y");
     f.flush();
@@ -312,11 +314,13 @@ unittest {
     p.save("/tmp/out.qbin");
     Program q = new Program();
     q.loadFromFile("/tmp/out.qbin");
-    writeln(q.map);
-    writeln(q.functions);
 }
 
 void main(string[] args) {
+    if(args.length != 2) {
+        writeln("Usage: qvm-assmbler qbin_file_path");
+        return;
+    }
     Program p = loadQasm(args[1]);
     p.save(args[1].split(".")[0] ~ ".qbin");
 }
