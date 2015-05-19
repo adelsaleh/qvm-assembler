@@ -251,8 +251,17 @@ unittest {
  */ 
 IdentifierMap createMap() {
     IdentifierMap map;
+    map.addIndex("I", IdentifierType.FUNCTION);
     map.addIndex("H", IdentifierType.FUNCTION);
     map.addIndex("CNOT", IdentifierType.FUNCTION);
+    map.addIndex("X", IdentifierType.FUNCTION);
+    map.addIndex("Y", IdentifierType.FUNCTION);
+    map.addIndex("Z", IdentifierType.FUNCTION);
+    map.addIndex("F", IdentifierType.FUNCTION);
+    map.addIndex("T", IdentifierType.FUNCTION);
+    map.addIndex("RPI4", IdentifierType.FUNCTION);
+    map.addIndex("RPI8", IdentifierType.FUNCTION);
+    map.addIndex("RPI3", IdentifierType.FUNCTION);
     return map;
 }
 
